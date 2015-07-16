@@ -1,0 +1,45 @@
+function MyFunction(){
+
+var n=prompt('n = ?','');
+
+var k;
+var l;
+
+	if(n<=7){
+	   k=7;
+	   l=77;}
+
+	else if(n>=7 && n<77){
+	   k=77;
+	   l=777;}
+	
+	else{
+	   k=777;
+	   l=7777;}
+
+var i=0;
+
+var ost;
+var ost1;
+
+
+while(i<15){
+	
+	
+	ost=k%n;
+	
+		
+	ost1=l%n;
+	
+		
+	if(ost=ost1){	
+	   var P=l-k;}
+
+
+l=l+'7';
+
+i++;
+}
+
+document.getElementById('posl').innerHTML = 'Последовательность примет вид: ' + P + '...';
+}
