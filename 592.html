@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Решение задачи №592</title>
+<h4>Требуется получить последовательность, которая состоит из нулей и семерок и образует десятичную запись некоторого натурального числа, делящегося на n</h4>
+</head>
+
+<body>
+
+<p> Введите натуральное число n. <strong> <br>  ( Натуральным называется число, используемое при счете : 1, 2, 3, 4, 5,... ) </strong> </p>
+
+
+<button onclick="MyFunction()">Ввести число</button>
+
+<p id="posl"> Последовательность примет вид:  </p>
+
+<script>
+
+ function MyFunction(){
+
+var n=prompt('n = ?','');
+
+var k;
+var l;
+
+	if(n<=7){
+	   k=7;
+	   l=77;}
+
+	else if(n>=7 && n<77){
+	   k=77;
+	   l=777;}
+	
+	else{
+	   k=777;
+	   l=7777;}
+
+var i=0;
+
+var ost;
+var ost1;
+
+
+while(i<15){
+	
+	
+	ost=k%n;
+	
+		
+	ost1=l%n;
+	
+		
+	if(ost=ost1){	
+	   var P=l-k;}
+
+
+l=l+'7';
+
+i++;
+}
+
+document.getElementById('posl').innerHTML = 'Последовательность примет вид: ' + P + '...';
+}
+
+
+</script>
+
+
+</body>
+</html>
